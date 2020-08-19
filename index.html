@@ -16,6 +16,7 @@
   <body class="bg-light">
 
     <!-- logo/header/description -->
+
     <div class="container">
       <div class="py-5 text-center">
         <img class="mb-4 d-block mx-auto" src="/bootstrap-solid.svg" alt="Bootstrap logo"  width="72" height="72" >
@@ -26,6 +27,7 @@
     </div>
 
     <!-- first and last name -->
+
     <div class="container">
       <h2 class="mb-3">Billing address</h2>
 
@@ -51,6 +53,7 @@
         </div>
 
         <!-- username -->
+
         <div class="form-group mt-3">
           <label class="mb-2" for="userName">Username</label>
   
@@ -70,6 +73,7 @@
         </div>
 
         <!-- address -->
+
         <div class="form-group mt-3">
           <label class="mb-2" for="streetAddress">Address</label>
   
@@ -85,7 +89,7 @@
           <input type="email" class="form-control" id="streetAddress" placeholder="Apartment or suite">
         </div>
   
-        <div class="row d-flex mt-2 g-3">
+        <div class="row d-flex mt-1 g-3">
           <div class="form-group col-sm-6">
             <label class="mb-2" for="inputCountry">Country</label>
             <input type="text" class="form-control" id="inputCountry" placeholder="United States">
@@ -108,6 +112,90 @@
         </div>
   
         <hr class="my-4">
+
+        <!-- misc checkboxes -->
+
+        <div class="form-group form-check col-12">
+          <input type="checkbox" class="form-check-input" id="sameAddress" checked>
+          <label class="form-check-label lead" for="sameAddress">Shipping address is the same as billing address</label>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="saveInfo" checked>
+          <label class="form-check-label lead" for="saveInfo">Save this information for next time</label>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- Payment -->
+
+        <h2 class="mb-3">Payment</h2>
+        <div class="form-check lead">
+          <input class="form-check-input" type="radio" name="creditCard" id="creditCard" value="option1" checked>
+          <label class="form-check-label" for="creditCard">
+           Credit Card
+          </label>
+        </div>
+        <div class="form-check lead">
+          <input class="form-check-input" type="radio" name="debitCard" id="debitCard" value="option1">
+          <label class="form-check-label" for="debitCard">
+           Debit Card
+          </label>
+        </div>
+        <div class="form-check lead">
+          <input class="form-check-input" type="radio" name="paypal" id="paypal" value="option1">
+          <label class="form-check-label" for="paypal">
+           PayPal
+          </label>
+        </div>
+
+        <div class="row g-3 mt-2">
+          <div class="col-sm-6">
+            <label class="form-label" for="cardNAme">Name on card</label>
+            <input id="cardName" type="text" class="form-control" placeholder="John Smith" required>
+            <small id="nameHelp" class="form-text text-muted">Full name as displayed on card</small>
+
+            <!-- validating name -->
+            <div class="invalid-feedback">
+              Please add entire name.
+            </div>
+          </div>
+          
+          <div class="col-sm-6">
+            <label class="form-label" for="cardNumber">Credit card number</label>
+            <input id="cardNumber" type="text" class="form-control" placeholder="1234 5678 9101" required>
+            <!-- validating name -->
+            <div class="invalid-feedback">
+              Please add full full card number.
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-2">
+          <div class="col-sm-3">
+            <label class="form-label" for="expiration">Expiration</label>
+            <input id="experition" type="text" class="form-control" placeholder="11/24" required>
+            <!-- validating name -->
+            <div class="invalid-feedback">
+              Please enter expiration date.
+            </div>
+          </div>
+          
+          <div class="col-sm-3">
+            <label class="form-label" for="cvv">CVV</label>
+            <input id="cvv" type="text" class="form-control" placeholder="321" required>
+            <!-- validating name -->
+            <div class="invalid-feedback">
+              Please enter the security code located behind the card.
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- submit button -->
+
+        <button type="button" class="btn btn-primary btn-lg btn-block lead">Continue to checkout</button>
+        
         
       </form>
     </div>
