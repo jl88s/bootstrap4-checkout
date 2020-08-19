@@ -1,0 +1,11 @@
+html {
+  height: 300em; }
+
+input[placeholder],
+span, .text-muted {
+  font-size: .9em;
+  font-weight: 300; }
+
+p, .lead {
+  font-size: 1em;
+  font-weight: 300; }
