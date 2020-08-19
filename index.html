@@ -49,67 +49,68 @@
             </div>
           </div>
         </div>
+
+        <!-- username -->
+        <div class="form-group mt-3">
+          <label class="mb-2" for="userName">Username</label>
+  
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input id="userName" type="text" class="form-control rounded-right" placeholder="jsmith123" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <label class="mb-2" for="emailAddress">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com">
+        </div>
+
+        <!-- address -->
+        <div class="form-group mt-3">
+          <label class="mb-2" for="streetAddress">Address</label>
+  
+          <div class="input-group">
+            <input id="streetAddress" type="text" class="form-control" placeholder="1234 Main st." required>
+            <div class="invalid-feedback">
+              Please make sure it's the correct address.
+            </div>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <label class="mb-2" for="streetAddress">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="streetAddress" placeholder="Apartment or suite">
+        </div>
+  
+        <div class="row d-flex mt-2 g-3">
+          <div class="form-group col-sm-6">
+            <label class="mb-2" for="inputCountry">Country</label>
+            <input type="text" class="form-control" id="inputCountry" placeholder="United States">
+          </div>
+          <div class="form-group col-sm-4">
+            <label class="mb-2" for="inputState">State</label>
+            <select id="inputState" class="form-control text-muted">
+              <option selected>Choose...</option>
+              <option>California</option>
+              <option>New York</option>
+              <option>Oregon</option>
+              <option>Seattle</option>
+              <option>Texas</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-2">
+            <label class="mb-2" for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="94123">
+          </div>
+        </div>
+  
+        <hr class="my-4">
+        
       </form>
     </div>
-
-    <!-- username -->
-
-    <form class="container">
-      <div class="form-group mt-3">
-        <label class="mb-2" for="userName">Username</label>
-
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
-          </div>
-          <input id="userName" type="text" class="form-control rounded-right" placeholder="jsmith123" required>
-          <div class="invalid-feedback">
-            Please choose a username.
-          </div>
-        </div>
-      </div>
-      <div class="form-group mt-3">
-        <label class="mb-2" for="emailAddress">Email <span class="text-muted">(Optional)</span></label>
-        <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com">
-      </div>
-    </form>
-    
-    <!-- address -->
-    <form class="container">
-      <div class="form-group mt-3">
-        <label class="mb-2" for="streetAddress">Address</label>
-
-        <div class="input-group">
-          <input id="streetAddress" type="text" class="form-control" placeholder="1234 Main st." required>
-          <div class="invalid-feedback">
-            Please make sure it's the correct address.
-          </div>
-        </div>
-      </div>
-      <div class="form-group mt-3">
-        <label class="mb-2" for="streetAddress">Address 2 <span class="text-muted">(Optional)</span></label>
-        <input type="email" class="form-control" id="streetAddress" placeholder="Apartment or suite">
-      </div>
-
-      <div class="form-row d-flex">
-        <div class="form-group col-sm-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="form-group col-sm-4">
-          <label for="inputState">State</label>
-          <select id="inputState" class="form-control">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="form-group col-sm-2">
-          <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-      </div>
-      
-    </form>
     
 
     <!-- JavaScript and dependencies -->
