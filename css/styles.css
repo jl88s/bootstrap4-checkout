@@ -9,3 +9,6 @@ p, .lead {
 
 html {
   height: 100em; }
+
+.container {
+  max-width: 600px; }
